@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Play tic tac toe</title>
+  </head>
+  <body>
+    <header>
+      <h1>Play Tic, Tac , Toe</h1>
+      <h5>Built with HTML, CSS, JavaScript and - of course - lots of love!</h5>
+    </header>
+
+    <section class="section-player">
+      <div id="player-1-data" class="player">
+        <h4>Winner player_1=<a class="winner-count" id="win-count1"></a></h4>
+        <h3 id="name-player1">Player Name</h3>
+        <h1><strong>X</strong></h1>
+        <button id="button-edit1" class="Edit" data-playerid="1">Edit</button>
+      </div>
+
+      <div id="player-2-data" class="player">
+        <h4>Winner player_2=<a class="winner-count" id="win-count2"></a></h4>
+        <h3 id="name-player2">Player Name</h3>
+        <h1><strong>O</strong></h1>
+        <button id="button-edit2" class="Edit" data-playerid="2">Edit</button>
+      </div>
+    </section>
+
+    <section id="window-background">
+      <form class="choose-name" id="save-form">
+        <h3><strong>Choose your name </strong></h3>
+        <h5>Player name</h5>
+        <input type="text" id="input-window-name" name="playername" />
+        <div>
+          <button type="reset" id="button-cancel-name" class="button-cancel-name">Cancel</button>
+          <button type="submit" id="button-confirm-name" class="button-confirm-name">Confirm</button>
+        </div>
+      </form>
+    </section>
+
+    <nav id="button-bottom">
+      <button id="button-start" class="styleButton">Start Game</button>
+      <button id="button-reset" class="styleButton">Restart Game</button>
+    </nav>
+
+    <section id="window-game">
+      <p id="paragraph-turn-name">It's your turn <label id="turn-name"></label></p>
+      <div id="grid-container">
+        <div class="input-tic-tac" data-col="1" data-row="1"></div>
+        <div class="input-tic-tac" data-col="2" data-row="1"></div>
+        <div class="input-tic-tac" data-col="3" data-row="1"></div>
+
+        <div class="input-tic-tac" data-col="1" data-row="2"></div>
+        <div class="input-tic-tac" data-col="2" data-row="2"></div>
+        <div class="input-tic-tac" data-col="3" data-row="2"></div>
+
+        <div class="input-tic-tac" data-col="1" data-row="3"></div>
+        <div class="input-tic-tac" data-col="2" data-row="3"></div>
+        <div class="input-tic-tac" data-col="3" data-row="3"></div>
+      </div>
+    </section>
+
+    <div id="winner">
+      <label id="winner-id"></label>
+    </div>
+  </body>
+</html>
